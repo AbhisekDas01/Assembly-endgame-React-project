@@ -1,12 +1,48 @@
-# React + Vite
+# Assembly: Endgame
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Assembly: Endgame is a fun and interactive word-guessing game where players must guess a randomly selected word within a limited number of attempts. Each incorrect guess eliminates a programming language, and the goal is to save the programming world from Assembly!
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Word Guessing Game**: Guess the word in under 8 attempts.
+- **Dynamic Keyboard**: Interactive on-screen keyboard for guessing letters.
+- **Programming Language Chips**: Visual representation of eliminated programming languages.
+- **Game Status**: Displays win, loss, or progress updates dynamically.
+- **Confetti Celebration**: Celebrate your victory with confetti animations.
+- **Accessible Design**: Includes ARIA roles and live regions for screen readers.
 
-## Expanding the ESLint configuration
+## Project Structure
+```
+Assembly - Endgame
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── public
+│   └── vite.svg
+├── src
+│   ├── App.jsx
+│   ├── assets
+│   │   └── hangman-game (1).png
+│   ├── components
+│   │   ├── Header.jsx
+│   │   ├── Key.jsx
+│   │   ├── LangChip.jsx
+│   │   └── LetterChip.jsx
+│   ├── index.css
+│   ├── index.jsx
+│   ├── languages.js
+│   ├── utils
+│   │   └── utils.js
+│   └── words.js
+└── vite.config.js
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Key Files
+
+- **`src/App.jsx`**: Main application logic and UI rendering.
+- **`src/components/`**: Reusable React components like `Header`, `Key`, `LangChip`, and `LetterChip`.
+- **`src/utils/utils.js`**: Utility functions for random word selection and farewell messages.
+- **`src/languages.js`**: List of programming languages with their styles.
+- **`src/words.js`**: Word bank for the game.

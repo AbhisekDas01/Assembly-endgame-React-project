@@ -11,6 +11,11 @@ Assembly: Endgame is a fun and interactive word-guessing game where players must
 - **Confetti Celebration**: Celebrate your victory with confetti animations.
 - **Accessible Design**: Includes ARIA roles and live regions for screen readers.
 
+## Deployment
+
+The game is live and can be played here:  
+**[Assembly: Endgame](https://assembly-endgam.netlify.app/)**
+
 ## Project Structure
 ```
 Assembly - Endgame
